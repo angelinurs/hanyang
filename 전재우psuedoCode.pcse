@@ -1,0 +1,53 @@
+DECLARE isQuit : BOOLEAN
+DECLARE mainMENU : STRING
+DECLARE selectExcelFuntionMenu : STRING
+DECLARE File : POINTOFFILE
+DECLARE dataArray : ARRAYS
+DECLARE command : STRING
+DECLARE NUMBER : INTEGER
+
+isQuit <- False
+
+mainMENU <- "Select One and Press Number
+             1. Show All Data Sheet
+             2. Input Calculation Function
+             3. Program Quit"
+
+selectExcelFuntionMenu <- "1. SUM()
+                           2. AVERAGE()
+                           3. ...etc..."
+
+INPUT File
+
+REPEAT
+    CONVERT FileDataType
+    INPUT DataArray
+UNTIL EOF ( End OF File)
+
+REPEAT
+    PRINT mainMENU
+    INPUT NUMBER
+
+    CASE NUMBER OF
+        '1': PRINT DataArray
+        '2': Input Calculation Function
+        '3': isQuit <- True
+        OTHERWISE : PRINT "Retry Select Menu!!"
+    ENDCASE
+
+    IF NUMBER == 2 THEN 
+            PRINT selectExcelFuntionMenu
+            IF functionNumber == 1 THEN
+                INPUT command
+                PRINT SUM(command)
+            ELSE
+                IF functionNumber == 2 THEN
+                    INPUT command
+                    PRINT AVERAGE(command)
+                ELSE
+                    INPUT command
+                    PRINT etcFunction(command)
+                ENDIF
+            ENDIF
+    ENDIF
+UNTIL isQuit != True
