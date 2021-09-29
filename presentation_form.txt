@@ -87,6 +87,6 @@
 	2.  진행되었던 작업 ::
 		:: git 에 파일 첨부 완료 -> mkGradeTable ::
 								makeGradeTable.py :: 00_mkNameList.png 
-												  :: 01_mkRandomGradeTable.png
-											   	  :: 02_mkCsvFile.png
+											 :: 01_mkRandomGradeTable.png
+										   	 :: 02_mkCsvFile.png
 								gradeTableRead.c  :: 03_ReadTestCsvFile.png
