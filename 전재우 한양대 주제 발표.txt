@@ -61,7 +61,11 @@ UML 예정
 # 연구 내용
 ### 연구 내용
 - 제안 하는 아이디어를 구현하기 위한 연구 개발 내용 ::
-makeGradeTable, readCsvFile.c
+	:: mkGradeTable.zip :
+	:::: makeGradeTable.ipynb -> 랜덤으로 특정 성적표 csv 파일 만들기 ( jupyter 버전 )
+	:::: makeGradeTable.py -> 랜덤으로 특정 성적표 csv 파일 만들기 ( python 버전 )
+	:::: gradeTable.csv -> python 을 통해 만들어진 성적표 csv 파일
+	:::: gradeTableRead.c -> 성적표 csv 파일 c 언어로 읽어들이기 테스트 코드
 - 연구 개발의 절차 및 내용을 그림, 도표를 활용하여 표현 ::
 
 # 목표 결과물
